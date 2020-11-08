@@ -3,7 +3,7 @@ from .base import *
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['68.183.134.175']
 '''
 DATABASES = {
     'default': {
@@ -27,6 +27,7 @@ DATABASES = {
 STATIC_URL = '/static/'
 # dentro de la carpeta static estan guardados los archivos estaticos (BOOTSTRAP, FOUNDATION, etc)
 STATICFILES_DIRS = [BASE_DIR.child('static')]
+STATIC_ROOT = BASE_DIR.child('staticfiles')
 
 
 MEDIA_URL = '/media/'
